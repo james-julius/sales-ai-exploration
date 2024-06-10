@@ -9,6 +9,7 @@ packages = [{include = "sales_ai_exploration"}]
 [tool.poetry.dependencies]
 python = "^3.10"
 pandas = "^2.2.2"
+requests = "^2.32.3"
 
 
 [tool.poetry.group.dev.dependencies]
