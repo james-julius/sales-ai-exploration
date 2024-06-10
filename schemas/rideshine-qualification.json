@@ -1,0 +1,38 @@
+{
+    "name": "extract_building_lead_qualification_info",
+    "description": "Get the required information about the building and or its management company information from the html input",
+    "type": "object",
+    "title": "qualification_info",
+    "required": [
+        "is_luxury",
+        "has_100_units",
+        "has_parking",
+        "contact_email",
+        "contact_phone_number"
+    ],
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "is_luxury": {
+                "type": "boolean",
+                "description": "This is a luxury apartment building"
+            },
+            "has_100_units": {
+                "type": "boolean",
+                "description": "This apartment building has over 100 units"
+            },
+            "has_parking": {
+                "type": "boolean",
+                "description": "This apartment building has parking"
+            },
+            "contact_phone_number": {
+                "type": "string",
+                "description": "The contact phone number listed for the property"
+            },
+            "contact_email": {
+                "type": "string",
+                "description": "The contact email listed for the property"
+            }
+        }
+    }
+}
